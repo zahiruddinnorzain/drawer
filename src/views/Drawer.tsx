@@ -548,7 +548,7 @@ export default class Drawer extends React.PureComponent<Props> {
                   style={[
                     styles.overlay,
                     {
-                      opacity: interpolate(this.progress, {
+                      opacity: interpolateNode(this.progress, {
                         inputRange: [PROGRESS_EPSILON, 1],
                         outputRange: [0, 1],
                       }),
